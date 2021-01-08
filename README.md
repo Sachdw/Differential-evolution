@@ -1,11 +1,11 @@
 # Differential-evolution
 
-This is a simple program written in R to demonstrate a simple implementation of the differential evolution algorithm. An evolutionary algorithm with a wide range of applications related to optimization problems.
+This is a simple program written in R to demonstrate an implementation of the differential evolution algorithm, an evolutionary algorithm with a wide range of applications related to optimization problems.
 
-In this simple example, it has been adapted to solve a logic grid puzzle with a set of constraints. However it can be applied to a range of different problems including problems related to flight scheduling, route planning, parts selection etc.
+In this example, it has been adapted to solve a logic grid puzzle with a set of constraints. However it can be applied to a range of different problems including problems related to flight scheduling, route planning, parts selection etc.
 
+The puzzle assumes 5 cars are parked in a row from left to right at a rental car place at an Airport terminal.
 The aim of this program is to solve a logic grid puzzle to find: Which car was going to Port Macquarie? and Which car was hired by a Canadian couple?
-The puzzle assumes 5 cars are parked in a row from left to right at an Airport terminal.
 The following constraints are assumed:
 
 1. The Toyota Camry was hired at 6:00am by a British couple.
@@ -27,6 +27,7 @@ The following constraints are assumed:
 The key part to this algorithm is mutation, where generates a set number of solutions in a generation, randomly selects three solutions and uses mutation to generate a new solution. The new solution is then compared to the current best solution (as defined by a fitness function) and if it is better, it is kept as the new best solution. Otherwise it is discarded.
 
 The mutation formula is:
+      
       a + F*(b-c)
 
 Where a, b, and c are the three random solutions, and F is a mutation rate that we can specify.
