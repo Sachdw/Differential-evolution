@@ -34,4 +34,4 @@ Where a, b, and c are the three random solutions, and F is a mutation rate that 
 
 To conceptualize the constraints of the problem, I implemented them as a binary matrix with each column representing a car, and each row representing a variable. 
 
-The program is written in R for the sake of simplicity to take advantage of the ease of representing matrices. To run the program you can use R studio or run it in the terminal by typing: "R" and the file name.
+The program is written in R for the sake of simplicity, and to take advantage of the ease of representing matrices. To run the program you will need to have R installed on your machine. You can run the program in R studio, or run it in the terminal by typing: "R" and the file name.
